@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Index Choose File</title>
+
+</head>
+<body>
+
+
+    <form action="/file" enctype="multipart/form-data" method="POST">
+    <center><input type='file' id='fi' name='inputfile' accept=".csv" required />
+    <br /><br  />
+  </form>
+
+    <input type="submit" id="upload" value="FileUpload"  onclick="c.sendReq('/file')"/>
+    <input type="button" id="sql" value="Show CSV Data from Mysql" onclick="c.sendReq('/show')" />
+
+    </center><hr />
+
+    <script src='index.js'></script>
+    <div id="print">
+
+    </div>
+
+</body>
+
+</html>
